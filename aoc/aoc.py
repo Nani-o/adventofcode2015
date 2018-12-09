@@ -12,7 +12,7 @@ def get_input(day):
     puzzle_input = None
     with open(input_file, 'r') as f:
         puzzle_input = f.read()
-    return puzzle_input
+    return puzzle_input.rstrip('\n')
 
 def get_solver(day, part):
     submodule_name = "day{}".format(day)
